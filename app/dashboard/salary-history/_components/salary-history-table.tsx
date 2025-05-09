@@ -3,15 +3,18 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { SalaryRecord } from "./salary-types";
 import { salaryData } from "./salary-mock-data";
+interface SalaryHistoryTableDesktopProps {
+  data: SalaryRecord[];
+}
 
-const SalaryHistoryTable: React.FC = () => {
+const SalaryHistoryTable: React.FC<SalaryHistoryTableDesktopProps> = ({ data }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 7;
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = salaryData.slice(indexOfFirstItem, indexOfLastItem);
-  const totalPages = Math.ceil(salaryData.length / itemsPerPage);
+  const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
+  const totalPages = Math.ceil(data.length / itemsPerPage);
 
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
