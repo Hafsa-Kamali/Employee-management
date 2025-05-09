@@ -2,7 +2,6 @@
 "use client";
 import DashboardLayout from "../dashboard-layout";
 import SalaryHistoryTableMain from "./_components/salary-history-integretion";
-import SalaryHistoryTable from "./_components/salary-history-table";
 
 const SettingsPage = () => {
   return (

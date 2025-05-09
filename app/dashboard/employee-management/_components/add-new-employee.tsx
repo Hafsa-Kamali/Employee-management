@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState, useRef } from "react";
-import { X } from "lucide-react";
-import { FaUserCircle } from "react-icons/fa";
 import Image from "next/image";
 import Modal from "@/app/components/modal"; // ✅ import your reusable Modal
 
@@ -117,6 +115,7 @@ const AddEmployeeModal: React.FC<AddEmployeeModalProps> = ({ isOpen, onClose, on
             </div>
           </div>
           <input
+           title="Upload Profile Image" 
             type="file"
             accept="image/png, image/jpeg"
             className="hidden"
@@ -158,7 +157,7 @@ const AddEmployeeModal: React.FC<AddEmployeeModalProps> = ({ isOpen, onClose, on
             value={employeeData.mobileNumber}
             onChange={handleInputChange}
           />
-          <select name="position" className={inputField} value={employeeData.position} onChange={handleInputChange}>
+          <select title="Position" name="position" className={inputField} value={employeeData.position} onChange={handleInputChange}>
             <option value="">Position</option>
             <option value="UI/UX Designer">UI/UX Designer</option>
             <option value="Frontend Developer">Frontend Developer</option>
@@ -166,6 +165,7 @@ const AddEmployeeModal: React.FC<AddEmployeeModalProps> = ({ isOpen, onClose, on
             <option value="Fullstack Developer">Fullstack Developer</option>
           </select>
           <input
+            title="Start of Cooperation"
             type="date"
             name="startOfCooperation"
             className={inputField}
@@ -173,6 +173,7 @@ const AddEmployeeModal: React.FC<AddEmployeeModalProps> = ({ isOpen, onClose, on
             onChange={handleInputChange}
           />
           <select
+            title=" Status"
             name="workingStatus"
             className={inputField}
             value={employeeData.workingStatus}

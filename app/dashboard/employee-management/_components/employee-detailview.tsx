@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { User, Edit, Mail, Calendar, Briefcase } from "lucide-react";
+import { User, Edit, Calendar, Briefcase } from "lucide-react";
 import { employeeRecord } from "./employ-types";
 import { IoCalendarOutline } from "react-icons/io5";
 import DatePicker from "react-datepicker";
@@ -12,7 +12,7 @@ interface EmployeeDetailViewProps {
   onClose: () => void;
 }
 
-const EmployeeDetailView: React.FC<EmployeeDetailViewProps> = ({ employee, onClose }) => {
+const EmployeeDetailView: React.FC<EmployeeDetailViewProps> = ({ employee }) => {
   const [activeTab, setActiveTab] = useState<"contact" | "salary" | "leave" | "message">("contact");
   const [note, setNote] = useState("");
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);

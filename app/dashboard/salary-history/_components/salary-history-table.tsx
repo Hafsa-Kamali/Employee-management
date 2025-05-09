@@ -18,16 +18,9 @@ const SalaryHistoryTable: React.FC = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <div className="bg-transparent text-white overflow-hidden">
-      <SalaryManagement/>
-      <table className="w-full ml-8">
-        <thead className="bg-transparent border-white/20 border-b border-t py-8 text-lg">
-=======
     <div className="rounded-2xl border border-white/10 overflow-hidden text-white">
       <table className="w-full text-sm text-left">
         <thead className="text-xs uppercase bg-[#0D0D0D] border-b border-white/10">
->>>>>>> f8d50673e43af1e4110dd4047458adcda1addf78
           <tr>
             <th className="px-6 py-4">Employee Name</th>
             <th className="px-6 py-4">Base Salary</th>
