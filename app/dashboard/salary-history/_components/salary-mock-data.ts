@@ -366,4 +366,3 @@ export const salaryData: SalaryRecord[] = [
         image: "/images/image(1).png"
       },
   ];
-  
