@@ -1,6 +1,6 @@
 "use client";
 import React, { useMemo, useState } from "react";
-import SalaryHistoryTableDesktop from "./salary-management-table-desktop";
+import SalaryHistoryTableDesktop from "../../salary-history/_components/salary-history-table-desktop";
 import SalaryHistoryTableMobile from "../../salary-history/_components/salary-history-table-mobile";
 import SampleSalaryTable from "./salary-table";
 import { SalaryRecord } from "./salary-types";
