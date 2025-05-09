@@ -1,0 +1,261 @@
+export interface employeeRecord {
+    id: number;
+    name: string;
+    email: string;
+    position: string;
+    startDate: string;
+    workStatus: 'Active' | 'OnLeave';
+    profileImage?: string;
+   mobileNUmber?:string
+}
+
+export const employeeData: employeeRecord[] = [
+    {
+        id: 1,
+        name: 'Janny Adaster',
+        email: 'janny.adut@gmail.com',
+        position: 'UI/UX Designer',
+        startDate: 'Since July, 2022',
+        workStatus: 'Active',
+        profileImage:"/images/image.png",
+        
+    },
+    {
+        id: 2,
+        name: 'Hymon Addy',
+        email: 'hymonad@gmail.com',
+        position: 'UI/UX Designer',
+        startDate: 'Since July, 2022',
+        workStatus: 'Active',
+    },
+    {
+        id: 3,
+        name: 'Sarah Johnson',
+        email: 'sarah.j@example.com',
+        position: 'Frontend Developer',
+        startDate: 'Since August, 2021',
+        workStatus: 'OnLeave',
+        profileImage:"/images/image(1).png"
+    },
+    {
+        id: 4,
+        name: 'Michael Chen',
+        email: 'michael.c@example.com',
+        position: 'Backend Developer',
+        startDate: 'Since January, 2023',
+        workStatus: 'Active',
+    },
+    {
+        id: 5,
+        name: 'Emily Wilson',
+        email: 'emily.w@example.com',
+        position: 'Product Manager',
+        startDate: 'Since March, 2020',
+        workStatus: 'OnLeave',
+    },
+    {
+        id: 6,
+        name: 'David Kim',
+        email: 'david.k@example.com',
+        position: 'Data Analyst',
+        startDate: 'Since November, 2022',
+        workStatus: 'Active',
+        profileImage:"/images/image.png"
+    },
+    {
+        id: 7,
+        name: 'Olivia Martinez',
+        email: 'olivia.m@example.com',
+        position: 'Marketing Specialist',
+        startDate: 'Since September, 2022',
+        workStatus: 'Active',
+        profileImage:"/images/image(1).png"
+    },
+    {
+        id: 8,
+        name: 'Robert Taylor',
+        email: 'robert.t@example.com',
+        position: 'DevOps Engineer',
+        startDate: 'Since May, 2021',
+        workStatus: 'Active',
+    },
+    {
+        id: 9,
+        name: 'Sophia Anderson',
+        email: 'sophia.a@example.com',
+        position: 'HR Manager',
+        startDate: 'Since February, 2020',
+        workStatus: 'OnLeave',
+    },
+    {
+        id: 10,
+        name: 'William Brown',
+        email: 'william.b@example.com',
+        position: 'QA Engineer',
+        startDate: 'Since June, 2022',
+        workStatus: 'Active',
+        profileImage:"/images/image.png"
+    },
+    {
+        id: 11,
+        name: 'Ava Garcia',
+        email: 'ava.g@example.com',
+        position: 'Content Writer',
+        startDate: 'Since April, 2023',
+        workStatus: 'Active',
+    },
+    {
+        id: 12,
+        name: 'James Rodriguez',
+        email: 'james.r@example.com',
+        position: 'System Architect',
+        startDate: 'Since October, 2019',
+        workStatus: 'Active',
+        profileImage:"/images/image.png"
+    },
+    {
+        id: 13,
+        name: 'Isabella Lee',
+        email: 'isabella.l@example.com',
+        position: 'UI/UX Designer',
+        startDate: 'Since December, 2022',
+        workStatus: 'OnLeave',
+    },
+    {
+        id: 14,
+        name: 'Benjamin Walker',
+        email: 'benjamin.w@example.com',
+        position: 'Mobile Developer',
+        startDate: 'Since July, 2021',
+        workStatus: 'Active',
+    },
+    {
+        id: 15,
+        name: 'Mia Hall',
+        email: 'mia.h@example.com',
+        position: 'Graphic Designer',
+        startDate: 'Since August, 2022',
+        workStatus: 'Active',
+    },
+    {
+        id: 16,
+        name: 'Ethan Young',
+        email: 'ethan.y@example.com',
+        position: 'Database Administrator',
+        startDate: 'Since January, 2021',
+        workStatus: 'OnLeave',
+        profileImage:"/images/image(1).png"
+    },
+    {
+        id: 17,
+        name: 'Charlotte Allen',
+        email: 'charlotte.a@example.com',
+        position: 'Business Analyst',
+        startDate: 'Since March, 2023',
+        workStatus: 'Active',
+    },
+    {
+        id: 18,
+        name: 'Alexander Hernandez',
+        email: 'alexander.h@example.com',
+        position: 'Full Stack Developer',
+        startDate: 'Since November, 2020',
+        workStatus: 'Active',
+    },
+    {
+        id: 19,
+        name: 'Amelia King',
+        email: 'amelia.k@example.com',
+        position: 'SEO Specialist',
+        startDate: 'Since September, 2021',
+        workStatus: 'OnLeave',
+    },
+    {
+        id: 20,
+        name: 'Daniel Wright',
+        email: 'daniel.w@example.com',
+        position: 'Network Engineer',
+        startDate: 'Since May, 2022',
+        workStatus: 'Active',
+    },
+    {
+        id: 21,
+        name: 'Harper Lopez',
+        email: 'harper.l@example.com',
+        position: 'Customer Support',
+        startDate: 'Since February, 2023',
+        workStatus: 'Active',
+    },
+    {
+        id: 22,
+        name: 'Matthew Scott',
+        email: 'matthew.s@example.com',
+        position: 'Sales Executive',
+        startDate: 'Since June, 2021',
+        workStatus: 'OnLeave',
+    },
+    {
+        id: 23,
+        name: 'Evelyn Green',
+        email: 'evelyn.g@example.com',
+        position: 'Project Manager',
+        startDate: 'Since April, 2020',
+        workStatus: 'Active',
+    },
+    {
+        id: 24,
+        name: 'Joseph Adams',
+        email: 'joseph.a@example.com',
+        position: 'Security Specialist',
+        startDate: 'Since October, 2022',
+        workStatus: 'Active',
+    },
+    {
+        id: 25,
+        name: 'Abigail Baker',
+        email: 'abigail.b@example.com',
+        position: 'UI/UX Designer',
+        startDate: 'Since December, 2021',
+        workStatus: 'Active',
+    },
+    {
+        id: 26,
+        name: 'Samuel Nelson',
+        email: 'samuel.n@example.com',
+        position: 'Backend Developer',
+        startDate: 'Since July, 2023',
+        workStatus: 'OnLeave',
+    },
+    {
+        id: 27,
+        name: 'Elizabeth Carter',
+        email: 'elizabeth.c@example.com',
+        position: 'Frontend Developer',
+        startDate: 'Since August, 2020',
+        workStatus: 'Active',
+    },
+    {
+        id: 28,
+        name: 'Henry Mitchell',
+        email: 'henry.m@example.com',
+        position: 'Data Scientist',
+        startDate: 'Since January, 2022',
+        workStatus: 'Active',
+    },
+    {
+        id: 29,
+        name: 'Victoria Perez',
+        email: 'victoria.p@example.com',
+        position: 'Marketing Manager',
+        startDate: 'Since March, 2021',
+        workStatus: 'OnLeave',
+    },
+    {
+        id: 30,
+        name: 'Andrew Roberts',
+        email: 'andrew.r@example.com',
+        position: 'CTO',
+        startDate: 'Since November, 2019',
+        workStatus: 'Active',
+    }
+];
